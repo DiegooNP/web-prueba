@@ -1,0 +1,22 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# JetBrains / PyCharm
+.idea/
+
+# Node.js
+node_modules/
+
+# Builds
+dist/
+build/
+
+# Variables privadas
+.env
+
+# Logs
+*.log
