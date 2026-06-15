@@ -176,6 +176,44 @@ footer{
 }   
 
 
+.footer-social{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+    margin:20px 0;
+}
+
+.footer-social a{
+    color:white;
+    text-decoration:none;
+
+    padding:10px 15px;
+    border-radius:10px;
+
+    transition:0.3s;
+}
+
+.footer-social a:hover{
+    background:rgba(255,255,255,0.15);
+
+    transform:translateY(-3px);
+
+    color:#FFD700;
+}
+
+.footer-social i{
+    margin-right:8px;
+}
+
+.copyright{
+    margin-top:20px;
+    opacity:0.8;
+    font-size:14px;
+}
+
+
 
 /*
 display:flex  -- Activa Flexbox.
@@ -230,7 +268,7 @@ box-shadow más fuerte crea efecto de profundidad.
     box-shadow: 0px 0px 40px rgba(0,0,0,0.5);
 }
 
-@keygrames aparecer{
+@keyframes aparecer{
     from{
         opacity:0;
         transform: translateY(30px);
@@ -309,7 +347,7 @@ box-shadow más fuerte crea efecto de profundidad.
     box-shadow:0 10px 30px rgba(0,0,0,0.25);
     transition:all 0.3s ease;
 
-    animation: fadeUp 0.5s ease;
+    animation: fadeUp 0.5s ease both;
 }
 
 .card:hover{
@@ -411,8 +449,8 @@ box-shadow más fuerte crea efecto de profundidad.
 
 .reveal{
     opacity:0;
-    transform:translateY(40px);
-    transition:0.8s ease;
+    transform:translateY(30px);
+    transition:opacity 0.8s ease, transform 0.8s ease;
 }
 
 .reveal.active{
@@ -443,4 +481,40 @@ box-shadow más fuerte crea efecto de profundidad.
     transform:translateY(-3px);
 
     box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.whatsapp-float{
+    position:fixed;
+
+    bottom:20px;
+    right:20px;
+
+    width:60px;
+    height:60px;
+
+    background:#25D366;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:30px;
+
+    text-decoration:none;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+
+    z-index:9999;
+
+    transition:0.3s;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
 }
