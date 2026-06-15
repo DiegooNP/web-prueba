@@ -10,38 +10,97 @@
 <body>
     
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Contacto</a>
+    <div class="logo">Mi Web PRO</div>
+
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+
+    <div class="nav-links" id="nav-links">   
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </div>
     </nav>   
     
-    <h1>🚀 WEB MAIN OFICIAL 🚀</h1> 
+    <div class="container reveal">
+    
+        <section class="hero reveal" id="inicio">
 
-     <h1>🚀 VERSION MAIN CONFLICTO 🚀</h1>
+            <p class="hero-tag">🚀 Proyecto web profesional</p>
 
-    <p>Mi primer proyecto profesional con VS Code + GitHub</p>
+            <h1>  Desarrollo Web Profesional
+                    <br>
+                  con Git y GitHub
+            </h1>
 
-    <h2>Estoy aprendiendo desarrollo web 🚀</h2>
+            <p class="hero-text">
+                  Construyendo proyectos reales utilizando HTML,
+                    CSS, JavaScript, Git, GitHub y despliegue automático.
+            </p>
 
-    <p>Proyecto subido correctamente a GitHub 🚀</p>
+            <div class="hero-buttons">
+                <button id="boton">Ver proyecto</button>
+                <button class="btn-secondary">Aprender más</button>
+            </div>
 
-    <button id="boton">Haz click</button>
+        </section>
+        
+        <section class="cards reveal" id="servicios">
+            <div class="card">
+                <span class="card-icon">📱</span>
+                <h3>Celulares</h3>
+                <p>Venta, asesoramiento y configuración de dispositivos móviles.</p>
+                <button>Ver más</button>
+            </div>
 
-    <p> Trabajando desde la rama develop 🚀</p>
+            <div class="card">
+                <span class="card-icon">💻</span>
+                <h3>Servicios Técnicos</h3>
+                <p>Reparación, mantenimiento y optimización de PCs y notebooks.</p>
+                <button>Ver más</button>
+            </div>
 
-    <h3> Probando Pull request profesional 🚀</h3>
+            <div class="card">
+                <span class="card-icon">🖥️</span>
+                <h3>Desarrollo Web</h3>
+                <p>Creación y diseño de sitios web modernos con GitHub y deploy automático.</p>
+                <button>Ver más</button>    
+            </div>
+        </section>
+    
+    </div>
 
-    <script src="script.js"></script>
+        <section class="contacto reveal" id="contacto">
+            <h2>Contacto</h2>
+               
+            <form>
+                <input type="text" placeholder="Tu nombre:" required>
+                <input type="email" placeholder="📧 diego@example.com" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                
+                <button type="submit">Enviar mensaje</button>
+            </form>
+
+            <a
+        href="https://wa.me/542982404040?text=Hola%20Diego,%20quiero%20más%20información."
+        class="whatsapp-btn"
+        target="_blank">
+
+        💬 Escribirme por WhatsApp
+            </a>
+        </section>
+  <p></p>
 
     <footer>
         <p>© 2026 Mi Primera Web PRO. Todos los derechos reservados.</p>
         
         <div class="footer-links">
-            <a href="#">Inicio</a>
-            <a href="#">Productos</a>
-            <a href="#">Contacto</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Productos</a>
+            <a href="#contacto">Contacto</a>
         </div>
     </footer>
+
+        <script src="js/script.js"></script>
     
 </body>
 </html>
