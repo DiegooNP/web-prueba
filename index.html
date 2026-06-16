@@ -75,10 +75,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         <section class="contacto reveal" id="contacto">
             <h2>Contacto</h2>
                
-            <form>
-                <input type="text" placeholder="Tu nombre:" required>
-                <input type="email" placeholder="📧 diego@example.com" required>
-                <textarea placeholder="Mensaje" required></textarea>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Tu nombre:" required>
+                <input type="email" name="email" placeholder="📧 diego@example.com" required>
+                <textarea name="message" placeholder="Mensaje" required></textarea>
                 
                 <button type="submit">Enviar mensaje</button>
             </form>
@@ -120,6 +120,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
             © 2026 Diego Nicolás Páez - Todos los derechos reservados.</p>
     </footer>
 
+
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+        <script>
+            emailjs.init("hwgg1DdD6FaiJVNCe");
+        </script>
+
+
         <script src="js/script.js"></script>
     
             <a
@@ -128,7 +136,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     target="_blank"
     rel="noopener noreferrer">
 
-    💬
+            💬
 
             </a>
 
